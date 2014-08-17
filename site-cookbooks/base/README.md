@@ -1,3 +1,6 @@
+Base cookbook
+======================
+
 Installs/Configure basic Debian -  Ubuntu box for development
 
 Requirements

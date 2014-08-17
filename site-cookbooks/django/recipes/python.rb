@@ -22,6 +22,14 @@ python_virtualenv node['python']['venv_dir'] do
 end
 
 
+%w{django psycopg2}.each do |pkg, version|
+python_pip pkg.to_s do
+    version version
+    virtualenv node['python']['venv_dir']
+ end
+end
+
+
 node['django']['python']['packages'].each do |pkg, version|
 python_pip pkg.to_s do
     version version
