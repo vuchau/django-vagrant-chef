@@ -58,9 +58,9 @@ The next attributes has to be defined to install python and virtualenv configura
 The next postgresql attributes has to be defined to install django postgresql
 
 ``
-['django_postgresql']['database'] = ''
-['django_postgresql']['user'] = ''
-['django_postgresql']['password'] = ''
+['django][postgresql']['database'] = ''
+['django][postgresql']['user'] = ''
+['django][postgresql']['password'] = ''
 ``
 
 The next postgresql attributes has to be defined to install python package at virtualenv
