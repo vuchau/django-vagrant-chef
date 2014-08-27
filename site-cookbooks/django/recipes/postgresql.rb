@@ -8,7 +8,7 @@ end
 
 pg_database node['django']['postgresql']['database'] do
   owner node['django']['postgresql']['user']
-  encoding 'utf8'
+  encoding node['django']['postgresql']['encoding']
   template 'template0'
   locale 'en_US.UTF8'
 end
